@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="handler"
+            type="com.gypsey.shopifyapp.productsection.activities.ProductList.Handler" />
+    </data>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/m_productmain"
+            bind:handler="@{handler}"/>
+        <include layout="@layout/m_bottomsheet"
+            bind:handler="@{handler}"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
+
+

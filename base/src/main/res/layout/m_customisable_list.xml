@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="commondata"
+            type="com.gypsey.shopifyapp.basesection.models.CommanModel" />
+        <variable
+            name="listdata"
+            type="com.gypsey.shopifyapp.basesection.models.ListData" />
+        <variable
+            name="clickproduct"
+            type="com.gypsey.shopifyapp.homesection.adapters.ProductListAdapter.Product" />
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="5dp"
+        app:cardElevation="2dp"
+        android:id="@+id/card"
+        app:cardCornerRadius="5dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main"
+            android:onClick="@{(view) -> clickproduct.productClick(view,listdata)}"
+            android:background="@color/white">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/image"
+                app:layout_constraintDimensionRatio="W,1:1"
+                bind:imageUrl="@{commondata.imageurl}"
+                android:src="@drawable/tes_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/nameandpricesection"
+                app:layout_constraintHorizontal_weight="0.4"
+                />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintHorizontal_weight="0.6"
+                app:layout_constraintStart_toEndOf="@id/image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/nameandpricesection">
+                <com.gypsey.shopifyapp.customviews.MageNativeTextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:texttype="bold"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="@{listdata.textdata}"
+                    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                    android:gravity="center" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pricesection"
+                    app:layout_constraintTop_toBottomOf="@id/name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    >
+                    <com.gypsey.shopifyapp.customviews.MageNativeTextView
+                        android:id="@+id/regularprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:texttype="normal"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:text="@{listdata.regularprice}"
+                        android:visibility="gone"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                        android:gravity="center_vertical" />
+                    <com.gypsey.shopifyapp.customviews.MageNativeTextView
+                        android:id="@+id/specialprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/regularprice"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:texttype="normal"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@{listdata.specialprice}"
+                        android:visibility="gone"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                        android:gravity="center_vertical" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

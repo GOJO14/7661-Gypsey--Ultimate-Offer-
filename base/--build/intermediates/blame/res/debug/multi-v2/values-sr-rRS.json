@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sr-rRS/values-sr-rRS.xml",
+            "map": [
+                {
+                    "source": "/home/cedcoss/.gradle/caches/transforms-2/files-2.1/c98bd5f75b82743a332d44908119183a/jetified-android.joda-2.10.3/res/values-sr-rRS/values-sr-rRS.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,206 @@
+[
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_collection_item.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_collection_item.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_category_circle.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_category_circle.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_productview.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_productview.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_bannerlayout.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_bannerlayout.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_forgotbottomsheet.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_forgotbottomsheet.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_searchitem.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_searchitem.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_webpage.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_webpage.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_addresslist.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_addresslist.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_cartlist.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_cartlist.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_categorygriditem.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_categorygriditem.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_banner_slider.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_banner_slider.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_registrationpage.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_registrationpage.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_topbar.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_topbar.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_customisable_list.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_customisable_list.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_imagefragment.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_imagefragment.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_bottomsheet.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_bottomsheet.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_collectionslider.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_collectionslider.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_autosearch.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_autosearch.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_productmain.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_productmain.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_addresslist_main.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_addresslist_main.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_listitem.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_listitem.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_leftmenufragment.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_leftmenufragment.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_addressbottomsheet.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_addressbottomsheet.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_homepage_modified.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_homepage_modified.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_slideritemone.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_slideritemone.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_registration.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_registration.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_variantoption.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_variantoption.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_dynamicmenu.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_dynamicmenu.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_homepage.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_homepage.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_addressitem.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_addressitem.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_slideritemtwo.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_slideritemtwo.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_category_square.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_category_square.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_product_slider.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_product_slider.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_userprofile.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_userprofile.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_collectionlist.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_collectionlist.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_login.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_login.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_wishlist.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_wishlist.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_login_page.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_login_page.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_categoryitem.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_categoryitem.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_collectionlgrid.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_collectionlgrid.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_productlistitem.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_productlistitem.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_cartitem.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_cartitem.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_product_hv_layout.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_product_hv_layout.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_splash.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_splash.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_fixedcustomisable.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_fixedcustomisable.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_productitem.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_productitem.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_wishitem.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_wishitem.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_standlonebanner.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_standlonebanner.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_orderitem.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_orderitem.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_multiplegrid.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_multiplegrid.xml"
+    },
+    {
+        "merged": "/home/cedcoss/Documents/NewShopifyApp/base/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/m_orderlist.xml",
+        "source": "/home/cedcoss/Documents/NewShopifyApp/base/src/main/res/layout/m_orderlist.xml"
+    }
+]

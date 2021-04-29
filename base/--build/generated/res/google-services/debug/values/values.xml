@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">546766386305-jsrhqghneskbo8g014ab2bg2k7ihec4l.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://shopifyapp-ad4b8.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">546766386305</string>
+    <string name="google_api_key" translatable="false">AIzaSyDYT29oJIqfYAC9sT7VT4U5aOEft-Yk-Jk</string>
+    <string name="google_app_id" translatable="false">1:546766386305:android:051ef9a52733d22d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDYT29oJIqfYAC9sT7VT4U5aOEft-Yk-Jk</string>
+    <string name="google_storage_bucket" translatable="false">shopifyapp-ad4b8.appspot.com</string>
+    <string name="project_id" translatable="false">shopifyapp-ad4b8</string>
+</resources>

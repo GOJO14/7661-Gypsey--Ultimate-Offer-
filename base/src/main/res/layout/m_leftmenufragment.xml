@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout >
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="features"
+            type="com.gypsey.shopifyapp.basesection.models.FeaturesModel" />
+        <variable
+            name="menudata"
+            type="com.gypsey.shopifyapp.basesection.models.MenuData" />
+        <variable
+            name="clickdata"
+            type="com.gypsey.shopifyapp.basesection.fragments.LeftMenu.ClickHandlers" />
+    </data>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontalguideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="10dp" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/verticalguideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".08" />
+        <com.gypsey.shopifyapp.customviews.MageNativeTextView
+            android:id="@+id/signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{menudata.username}"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toEndOf="@id/verticalguideline"
+            app:layout_constraintTop_toTopOf="@id/horizontalguideline"
+            app:texttype="bold"
+            android:tag="@{menudata.tag}"
+            android:onClick="@{(view) -> clickdata.navigationClicks(view)}"
+            />
+        <com.gypsey.shopifyapp.customviews.MageNativeTextView
+            android:id="@+id/headertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/drawertext"
+            app:layout_constraintTop_toBottomOf="@id/signin"
+            app:layout_constraintStart_toEndOf="@id/verticalguideline"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:texttype="normal" />
+        <com.gypsey.shopifyapp.customviews.MageNativeTextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:alpha="0.5"
+            app:texttype="normal"
+            android:id="@+id/line"
+            app:layout_constraintTop_toBottomOf="@id/headertext"
+            app:layout_constraintStart_toEndOf="@id/verticalguideline"
+            android:background="@color/main_color_gray_lt" />
+        <com.gypsey.shopifyapp.customviews.MageNativeTextView
+            android:id="@+id/menulinktittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shop_in"
+            android:tag="collections"
+            android:onClick="@{(view) -> clickdata.navigationClicks(view)}"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/line"
+            app:layout_constraintStart_toEndOf="@id/verticalguideline"
+            app:texttype="bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/menulist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/verticalguideline"
+            app:layout_constraintTop_toBottomOf="@id/menulinktittle" />
+        <com.gypsey.shopifyapp.customviews.MageNativeTextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:alpha="0.5"
+            app:texttype="normal"
+            android:id="@+id/line_two"
+            app:layout_constraintTop_toBottomOf="@id/menulist"
+            app:layout_constraintStart_toEndOf="@id/verticalguideline"
+            android:background="@color/main_color_gray_lt" />
+        <com.gypsey.shopifyapp.customviews.MageNativeTextView
+            android:id="@+id/previewsection"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/Livepreview"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:layout_marginTop="5dp"
+            android:tag="livepreview"
+            android:textAllCaps="true"
+            android:visibility="@{menudata.previewvislible}"
+            android:onClick="@{(view) -> clickdata.navigationClicks(view)}"
+            app:layout_constraintTop_toBottomOf="@id/line_two"
+            app:layout_constraintStart_toEndOf="@id/verticalguideline"
+            app:texttype="bold" />
+        <com.gypsey.shopifyapp.customviews.MageNativeTextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:alpha="0.5"
+            app:texttype="normal"
+            android:id="@+id/line_three"
+            android:visibility="@{menudata.previewvislible}"
+            app:layout_constraintTop_toBottomOf="@id/previewsection"
+            app:layout_constraintStart_toEndOf="@id/verticalguideline"
+            android:background="@color/main_color_gray_lt" />
+        <com.gypsey.shopifyapp.customviews.MageNativeTextView
+            android:id="@+id/myaccountsection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/myaccount"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/line_three"
+            app:layout_constraintStart_toEndOf="@id/verticalguideline"
+            app:texttype="bold" />
+        <com.gypsey.shopifyapp.customviews.MageNativeTextView
+            android:id="@+id/myprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/myprofile"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:tag="myprofile"
+            android:onClick="@{(view) -> clickdata.navigationClicks(view)}"
+            app:layout_constraintTop_toBottomOf="@id/myaccountsection"
+            app:layout_constraintStart_toEndOf="@id/verticalguideline"
+            app:texttype="normal" />
+        <com.gypsey.shopifyapp.customviews.MageNativeTextView
+            android:id="@+id/myaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/myaddress"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:tag="myaddress"
+            android:onClick="@{(view) -> clickdata.navigationClicks(view)}"
+            app:layout_constraintTop_toBottomOf="@id/myprofile"
+            app:layout_constraintStart_toEndOf="@id/verticalguideline"
+            app:texttype="normal" />
+        <com.gypsey.shopifyapp.customviews.MageNativeTextView
+            android:id="@+id/mywishlist"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/mywishlist"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:tag="mywishlist"
+            android:onClick="@{(view) -> clickdata.navigationClicks(view)}"
+            app:layout_constraintTop_toBottomOf="@id/myaddress"
+            app:layout_constraintStart_toEndOf="@id/verticalguideline"
+            app:texttype="normal" />
+        <com.gypsey.shopifyapp.customviews.MageNativeTextView
+            android:id="@+id/mycartlist"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/mycartlist"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:tag="mycartlist"
+            android:onClick="@{(view) -> clickdata.navigationClicks(view)}"
+            app:layout_constraintTop_toBottomOf="@id/mywishlist"
+            app:layout_constraintStart_toEndOf="@id/verticalguideline"
+            app:texttype="normal" />
+        <com.gypsey.shopifyapp.customviews.MageNativeTextView
+            android:id="@+id/myorders"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/myorders"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:tag="myorders"
+            android:onClick="@{(view) -> clickdata.navigationClicks(view)}"
+            app:layout_constraintTop_toBottomOf="@id/mycartlist"
+            app:layout_constraintStart_toEndOf="@id/verticalguideline"
+            app:texttype="normal" />
+        <com.gypsey.shopifyapp.customviews.MageNativeTextView
+            android:id="@+id/autosearch"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/search"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:tag="autosearch"
+            android:onClick="@{(view) -> clickdata.navigationClicks(view)}"
+            app:layout_constraintTop_toBottomOf="@id/myorders"
+            app:layout_constraintStart_toEndOf="@id/verticalguideline"
+            app:texttype="normal" />
+        <com.gypsey.shopifyapp.customviews.MageNativeTextView
+            android:id="@+id/currencyswitcher"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/currency"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:visibility="@{features.multi_currency ? View.VISIBLE : View.GONE}"
+            android:tag="currencyswitcher"
+            android:onClick="@{(view) -> clickdata.navigationClicks(view)}"
+            app:layout_constraintTop_toBottomOf="@id/autosearch"
+            app:layout_constraintStart_toEndOf="@id/verticalguideline"
+            app:texttype="normal" />
+        <com.gypsey.shopifyapp.customviews.MageNativeTextView
+            android:id="@+id/invitefriends"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/invitefriends"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:tag="invitefriends"
+            android:onClick="@{(view) -> clickdata.navigationClicks(view)}"
+            app:layout_constraintTop_toBottomOf="@id/currencyswitcher"
+            app:layout_constraintStart_toEndOf="@id/verticalguideline"
+            app:texttype="normal" />
+        <com.gypsey.shopifyapp.customviews.MageNativeTextView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/logout"
+            android:visibility="@{menudata.visible}"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:gravity="center_vertical"
+            android:tag="logout"
+            android:onClick="@{(view) -> clickdata.navigationClicks(view)}"
+            app:layout_constraintTop_toBottomOf="@id/invitefriends"
+            app:layout_constraintStart_toEndOf="@id/verticalguideline"
+            app:texttype="bold" />
+        <com.gypsey.shopifyapp.customviews.MageNativeTextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/barrierline"
+            android:layout_marginTop="5dp"
+            android:alpha="0.5"
+            app:texttype="normal"
+            app:layout_constraintStart_toEndOf="@id/verticalguideline"
+            android:background="@color/main_color_gray_lt"
+            app:layout_constraintTop_toBottomOf="@id/logout"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/barrierline"
+            app:layout_constraintEnd_toEndOf="parent">
+            <com.gypsey.shopifyapp.customviews.MageNativeTextView
+                android:id="@+id/appversion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="5dp"
+                android:text="@{menudata.appversion}"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                app:texttype="bold" />
+            <com.gypsey.shopifyapp.customviews.MageNativeTextView
+                android:id="@+id/copyright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/appversion"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="5dp"
+                android:text="@{menudata.copyright}"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                app:texttype="normal" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+</layout>

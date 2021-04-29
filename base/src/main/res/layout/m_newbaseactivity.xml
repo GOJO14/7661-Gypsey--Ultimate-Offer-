@@ -1,0 +1,111 @@
+ <!--
+  ~ Copyright/**
+  ~          * CedCommerce
+  ~           *
+  ~           * NOTICE OF LICENSE
+  ~           *
+  ~           * This source file is subject to the End User License Agreement (EULA)
+  ~           * that is bundled with this package in the file LICENSE.txt.
+  ~           * It is also available through the world-wide-web at this URL:
+  ~           * http://cedcommerce.com/license-agreement.txt
+  ~           *
+  ~           * @category  Ced
+  ~           * @package   MageNative
+  ~           * @author    CedCommerce Core Team <connect@cedcommerce.com >
+  ~           * @copyright Copyright CEDCOMMERCE (http://cedcommerce.com/)
+  ~           * @license      http://cedcommerce.com/license-agreement.txt
+  ~           */
+  -->
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            android:contentInsetStartWithNavigation="0dp"
+            app:theme="@style/AppTheme"
+            >
+            <ImageView
+                android:id="@+id/toolimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingBottom="5dp"
+                android:src="@drawable/wee"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitStart" />
+            <com.gypsey.shopifyapp.customviews.MageNativeTextView
+                android:id="@+id/tooltext"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:text="@string/app_name"
+                android:padding="2dp"
+                app:texttype="whitetext"
+                android:visibility="gone" />
+            <RelativeLayout
+                android:id="@+id/searchsection"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="gone"
+
+                >
+                <com.gypsey.shopifyapp.customviews.MageNativeTextView
+                    android:id="@+id/search"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/corner_search"
+                    android:hint="I'm shoppping for..."
+                    android:paddingStart="10dp"
+                    app:texttype="normal"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:gravity="start|center_vertical"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            android:background="@color/white"
+            >
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <fragment
+        android:id="@+id/leftmenu"
+        android:name="com.gypsey.shopifyapp.basesection.fragments.LeftMenu"
+        android:layout_width="290dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:layout="@layout/m_leftmenufragment"
+        tools:layout="@layout/m_leftmenufragment" />
+</androidx.drawerlayout.widget.DrawerLayout>

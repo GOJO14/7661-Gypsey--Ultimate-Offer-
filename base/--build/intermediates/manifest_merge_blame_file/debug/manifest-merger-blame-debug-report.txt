@@ -1,0 +1,560 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:dist="http://schemas.android.com/apk/distribution"
+4    package="com.shopify.shopifyapp"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="21"
+9-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml
+10        android:targetSdkVersion="29" />
+10-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml
+11
+12    <dist:module dist:instant="true" />
+12-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:6:5-40
+12-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:6:18-37
+13
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:7:1-75
+14-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:7:18-72
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:8:5-67
+15-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:8:22-64
+16    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+16-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:9:5-81
+16-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:9:22-78
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:10:5-80
+17-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:10:22-78
+18    <uses-permission android:name="android.permission.CAMERA" />
+18-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:11:5-64
+18-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:11:22-62
+19    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+20    <uses-feature
+20-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:25:5-27:36
+21        android:name="android.hardware.camera"
+21-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:26:9-47
+22        android:required="false" />
+22-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:27:9-33
+23    <uses-feature
+23-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:28:5-30:36
+24        android:name="android.hardware.camera.front"
+24-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:29:9-53
+25        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+25-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:30:9-33
+26    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+27    <uses-feature
+27-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:33:5-35:36
+28        android:name="android.hardware.camera.autofocus"
+28-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:34:9-57
+29        android:required="false" />
+29-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:35:9-33
+30    <uses-feature
+30-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:36:5-38:36
+31        android:name="android.hardware.camera.flash"
+31-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:37:9-53
+32        android:required="false" />
+32-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:38:9-33
+33    <uses-feature
+33-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:39:5-41:36
+34        android:name="android.hardware.screen.landscape"
+34-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:40:9-57
+35        android:required="false" />
+35-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:41:9-33
+36    <uses-feature
+36-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:42:5-44:36
+37        android:name="android.hardware.wifi"
+37-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:43:9-45
+38        android:required="false" />
+38-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:44:9-33
+39
+40    <uses-permission android:name="android.permission.WAKE_LOCK" />
+40-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:25:5-68
+40-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:25:22-65
+41    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+41-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:26:5-110
+41-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:26:22-107
+42    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+42-->[com.google.firebase:firebase-iid:20.0.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/749fde32f4196c971b9e0a6525620771/jetified-firebase-iid-20.0.2/AndroidManifest.xml:26:5-82
+42-->[com.google.firebase:firebase-iid:20.0.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/749fde32f4196c971b9e0a6525620771/jetified-firebase-iid-20.0.2/AndroidManifest.xml:26:22-79
+43    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+44    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+45
+46    <application
+46-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:12:5-113:19
+47        android:name="com.shopify.shopifyapp.MyApplication"
+47-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:13:9-60
+48        android:allowBackup="true"
+48-->[com.github.smarteist:autoimageslider:1.3.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/f5391f4d2a33926d7fdba25b50a58144/jetified-autoimageslider-1.3.2/AndroidManifest.xml:12:9-35
+49        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+49-->[androidx.core:core:1.1.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/c773900ab2558f215c436791ec9bb0f3/core-1.1.0/AndroidManifest.xml:24:18-86
+50        android:debuggable="true"
+51        android:icon="@mipmap/ic_launcher"
+51-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:14:9-43
+52        android:label="@string/app_name"
+52-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:15:9-41
+53        android:roundIcon="@mipmap/ic_launcher_round"
+53-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:16:9-54
+54        android:supportsRtl="true"
+54-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:17:9-35
+55        android:testOnly="true"
+56        android:theme="@style/AppTheme"
+56-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:18:9-40
+57        android:usesCleartextTraffic="true" >
+57-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:19:9-44
+58        <service android:name="com.shopify.shopifyapp.notificationsection.FirebaseInstanceIDService" >
+58-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:20:9-24:19
+58-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:20:18-101
+59            <intent-filter>
+59-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:21:13-23:29
+60                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+60-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:22:17-80
+60-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:22:25-77
+61            </intent-filter>
+62        </service>
+63        <service android:name="com.shopify.shopifyapp.notificationsection.FirebaseMessagingService" >
+63-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:25:9-29:19
+63-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:25:18-100
+64            <intent-filter>
+64-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:26:13-28:29
+65                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+65-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:27:17-78
+65-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:27:25-75
+66            </intent-filter>
+67        </service>
+68        <service
+68-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:30:9-34:39
+69            android:name="com.shopify.shopifyapp.jobservicessection.JobScheduler"
+69-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:31:13-82
+70            android:enabled="true"
+70-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:33:13-35
+71            android:exported="true"
+71-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:34:13-36
+72            android:permission="android.permission.BIND_JOB_SERVICE" />
+72-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:32:13-69
+73
+74        <activity android:name="com.shopify.shopifyapp.basesection.activities.Splash" >
+74-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:36:9-52:20
+74-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:36:19-86
+75            <intent-filter>
+75-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:37:13-40:29
+76                <action android:name="android.intent.action.MAIN" />
+76-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:38:17-69
+76-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:38:25-66
+77
+78                <category android:name="android.intent.category.LAUNCHER" />
+78-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:39:17-77
+78-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:39:27-74
+79            </intent-filter>
+80            <intent-filter android:autoVerify="true" >
+80-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:41:13-51:29
+80-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:42:17-42
+81                <action android:name="android.intent.action.VIEW" />
+81-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:44:17-69
+81-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:44:25-66
+82
+83                <category android:name="android.intent.category.DEFAULT" />
+83-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:45:17-76
+83-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:45:27-73
+84                <category android:name="android.intent.category.BROWSABLE" />
+84-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:46:17-78
+84-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:46:27-75
+85
+86                <data
+86-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:47:17-50:23
+87                    android:host="@string/shopdomain"
+87-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:48:21-54
+88                    android:scheme="https" />
+88-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:49:21-43
+89            </intent-filter>
+90        </activity>
+91        <activity
+91-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:53:9-55:76
+92            android:name="com.shopify.shopifyapp.addresssection.activities.AddressList"
+92-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:54:13-88
+93            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+93-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:55:13-73
+94        <activity android:name="com.shopify.shopifyapp.basesection.activities.BaseActivity" />
+94-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:56:9-95
+94-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:56:19-92
+95        <activity android:name="com.shopify.shopifyapp.basesection.activities.Weblink" />
+95-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:57:9-90
+95-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:57:19-87
+96        <activity android:name="com.shopify.shopifyapp.basesection.activities.NewBaseActivity" />
+96-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:58:9-98
+96-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:58:19-95
+97        <activity
+97-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:59:9-61:46
+98            android:name="com.shopify.shopifyapp.productsection.activities.ProductList"
+98-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:60:13-88
+99            android:launchMode="singleTop" />
+99-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:61:13-43
+100        <activity
+100-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:62:9-64:46
+101            android:name="com.shopify.shopifyapp.productsection.activities.ProductView"
+101-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:63:13-88
+102            android:launchMode="singleTop" />
+102-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:64:13-43
+103        <activity
+103-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:65:9-67:46
+104            android:name="com.shopify.shopifyapp.collectionsection.activities.CollectionList"
+104-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:66:13-94
+105            android:launchMode="singleTop" />
+105-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:67:13-43
+106        <activity
+106-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:68:9-70:46
+107            android:name="com.shopify.shopifyapp.wishlistsection.activities.WishList"
+107-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:69:13-86
+108            android:launchMode="singleTop" />
+108-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:70:13-43
+109        <activity
+109-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:71:9-73:46
+110            android:name="com.shopify.shopifyapp.cartsection.activities.CartList"
+110-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:72:13-82
+111            android:launchMode="singleTop" />
+111-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:73:13-43
+112        <activity
+112-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:74:9-76:46
+113            android:name="com.shopify.shopifyapp.ordersection.activities.OrderList"
+113-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:75:13-84
+114            android:launchMode="singleTop" />
+114-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:76:13-43
+115        <activity
+115-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:77:9-79:46
+116            android:name="com.shopify.shopifyapp.searchsection.activities.AutoSearch"
+116-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:78:13-86
+117            android:launchMode="singleTop" />
+117-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:79:13-43
+118        <activity android:name="com.shopify.shopifyapp.checkoutsection.activities.CheckoutWeblink" />
+118-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:80:9-102
+118-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:80:19-99
+119        <activity
+119-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:81:9-83:47
+120            android:name="com.shopify.shopifyapp.trialsection.activities.TrialExpired"
+120-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:82:13-87
+121            android:launchMode="singleTask" />
+121-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:83:13-44
+122        <activity android:name="com.shopify.shopifyapp.homesection.activities.HomePage" />
+122-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:84:9-91
+122-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:84:19-88
+123        <activity
+123-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:85:9-88:76
+124            android:name="com.shopify.shopifyapp.loginsection.activity.LoginActivity"
+124-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:86:13-86
+125            android:launchMode="singleTop"
+125-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:87:13-43
+126            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+126-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:88:13-73
+127        <activity
+127-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:89:9-92:76
+128            android:name="com.shopify.shopifyapp.userprofilesection.activities.UserProfile"
+128-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:90:13-92
+129            android:launchMode="singleTop"
+129-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:91:13-43
+130            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+130-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:92:13-73
+131        <activity
+131-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:93:9-96:76
+132            android:name="com.shopify.shopifyapp.loginsection.activity.RegistrationActivity"
+132-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:94:13-93
+133            android:launchMode="singleTop"
+133-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:95:13-43
+134            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+134-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:96:13-73
+135        <activity
+135-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:97:9-104:15
+136            android:name="com.shopify.shopifyapp.searchsection.activities.SearchByScanner"
+136-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:98:13-91
+137            android:label="@string/app_name"
+137-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:99:13-45
+138            android:screenOrientation="portrait"
+138-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:100:13-49
+139            android:stateNotNeeded="true"
+139-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:101:13-42
+140            android:theme="@style/zxing_CaptureTheme"
+140-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:102:13-54
+141            android:windowSoftInputMode="stateAlwaysHidden" />
+141-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:103:13-60
+142        <activity
+142-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:105:9-112:15
+143            android:name="com.shopify.shopifyapp.livepreviewsection.LivePreview"
+143-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:106:13-81
+144            android:label="@string/app_name"
+144-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:107:13-45
+145            android:screenOrientation="portrait"
+145-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:108:13-49
+146            android:stateNotNeeded="true"
+146-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:109:13-42
+147            android:theme="@style/zxing_CaptureTheme"
+147-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:110:13-54
+148            android:windowSoftInputMode="stateAlwaysHidden" />
+148-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:111:13-60
+149
+150        <service
+150-->[com.google.firebase:firebase-inappmessaging-display:19.0.3] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/425769cb0c870775ca5996eef1e95889/jetified-firebase-inappmessaging-display-19.0.3/AndroidManifest.xml:15:9-21:19
+151            android:name="com.google.firebase.components.ComponentDiscoveryService"
+151-->[com.google.firebase:firebase-inappmessaging-display:19.0.3] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/425769cb0c870775ca5996eef1e95889/jetified-firebase-inappmessaging-display-19.0.3/AndroidManifest.xml:16:13-84
+152            android:directBootAware="true"
+152-->[com.google.firebase:firebase-common:19.3.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/ab41160b4b656972f14f20b1a8af0014/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+153            android:exported="false" >
+153-->[com.google.firebase:firebase-inappmessaging-display:19.0.3] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/425769cb0c870775ca5996eef1e95889/jetified-firebase-inappmessaging-display-19.0.3/AndroidManifest.xml:17:13-37
+154            <meta-data
+154-->[com.google.firebase:firebase-inappmessaging-display:19.0.3] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/425769cb0c870775ca5996eef1e95889/jetified-firebase-inappmessaging-display-19.0.3/AndroidManifest.xml:18:13-20:85
+155                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar"
+155-->[com.google.firebase:firebase-inappmessaging-display:19.0.3] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/425769cb0c870775ca5996eef1e95889/jetified-firebase-inappmessaging-display-19.0.3/AndroidManifest.xml:19:17-144
+156                android:value="com.google.firebase.components.ComponentRegistrar" />
+156-->[com.google.firebase:firebase-inappmessaging-display:19.0.3] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/425769cb0c870775ca5996eef1e95889/jetified-firebase-inappmessaging-display-19.0.3/AndroidManifest.xml:20:17-82
+157            <meta-data
+157-->[com.google.firebase:firebase-messaging:20.1.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5343104783d118eea8e40faf2f40c201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:38:13-40:85
+158                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+158-->[com.google.firebase:firebase-messaging:20.1.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5343104783d118eea8e40faf2f40c201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:39:17-119
+159                android:value="com.google.firebase.components.ComponentRegistrar" />
+159-->[com.google.firebase:firebase-messaging:20.1.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5343104783d118eea8e40faf2f40c201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:40:17-82
+160            <meta-data
+160-->[com.google.firebase:firebase-inappmessaging:19.0.3] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/6941e767b011b3fee2de7dbdab9c70c0/jetified-firebase-inappmessaging-19.0.3/AndroidManifest.xml:17:13-19:85
+161                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar"
+161-->[com.google.firebase:firebase-inappmessaging:19.0.3] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/6941e767b011b3fee2de7dbdab9c70c0/jetified-firebase-inappmessaging-19.0.3/AndroidManifest.xml:18:17-129
+162                android:value="com.google.firebase.components.ComponentRegistrar" />
+162-->[com.google.firebase:firebase-inappmessaging:19.0.3] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/6941e767b011b3fee2de7dbdab9c70c0/jetified-firebase-inappmessaging-19.0.3/AndroidManifest.xml:19:17-82
+163            <meta-data
+163-->[com.google.firebase:firebase-datatransport:17.0.3] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/7f86afbe94a1e9b717bbddcd27e86825/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+164                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+164-->[com.google.firebase:firebase-datatransport:17.0.3] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/7f86afbe94a1e9b717bbddcd27e86825/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+165                android:value="com.google.firebase.components.ComponentRegistrar" />
+165-->[com.google.firebase:firebase-datatransport:17.0.3] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/7f86afbe94a1e9b717bbddcd27e86825/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+166            <meta-data
+166-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/f5f54b11948b3dae4239c46fcc793e02/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:30:13-32:85
+167                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+167-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/f5f54b11948b3dae4239c46fcc793e02/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:31:17-139
+168                android:value="com.google.firebase.components.ComponentRegistrar" />
+168-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/f5f54b11948b3dae4239c46fcc793e02/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:32:17-82
+169            <meta-data
+169-->[com.google.firebase:firebase-ml-vision:24.0.1] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/2a4621743bc391f789d51c5a6fe72169/jetified-firebase-ml-vision-24.0.1/AndroidManifest.xml:12:13-14:85
+170                android:name="com.google.firebase.components:com.google.firebase.ml.vision.VisionRegistrar"
+170-->[com.google.firebase:firebase-ml-vision:24.0.1] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/2a4621743bc391f789d51c5a6fe72169/jetified-firebase-ml-vision-24.0.1/AndroidManifest.xml:13:17-108
+171                android:value="com.google.firebase.components.ComponentRegistrar" />
+171-->[com.google.firebase:firebase-ml-vision:24.0.1] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/2a4621743bc391f789d51c5a6fe72169/jetified-firebase-ml-vision-24.0.1/AndroidManifest.xml:14:17-82
+172            <meta-data
+172-->[com.google.firebase:firebase-ml-common:22.0.1] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/9ba0330982a65f8a96bc21f4e1aa32ae/jetified-firebase-ml-common-22.0.1/AndroidManifest.xml:11:13-13:85
+173                android:name="com.google.firebase.components:com.google.firebase.ml.common.CommonComponentRegistrar"
+173-->[com.google.firebase:firebase-ml-common:22.0.1] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/9ba0330982a65f8a96bc21f4e1aa32ae/jetified-firebase-ml-common-22.0.1/AndroidManifest.xml:12:17-117
+174                android:value="com.google.firebase.components.ComponentRegistrar" />
+174-->[com.google.firebase:firebase-ml-common:22.0.1] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/9ba0330982a65f8a96bc21f4e1aa32ae/jetified-firebase-ml-common-22.0.1/AndroidManifest.xml:13:17-82
+175            <meta-data
+175-->[com.google.firebase:firebase-iid:20.0.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/749fde32f4196c971b9e0a6525620771/jetified-firebase-iid-20.0.2/AndroidManifest.xml:32:13-34:85
+176                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+176-->[com.google.firebase:firebase-iid:20.0.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/749fde32f4196c971b9e0a6525620771/jetified-firebase-iid-20.0.2/AndroidManifest.xml:33:17-96
+177                android:value="com.google.firebase.components.ComponentRegistrar" />
+177-->[com.google.firebase:firebase-iid:20.0.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/749fde32f4196c971b9e0a6525620771/jetified-firebase-iid-20.0.2/AndroidManifest.xml:34:17-82
+178            <meta-data
+178-->[com.google.firebase:firebase-database:19.2.1] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5f73e3786aeb8d8688c1a28d2a422344/jetified-firebase-database-19.2.1/AndroidManifest.xml:32:13-34:85
+179                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+179-->[com.google.firebase:firebase-database:19.2.1] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5f73e3786aeb8d8688c1a28d2a422344/jetified-firebase-database-19.2.1/AndroidManifest.xml:33:17-109
+180                android:value="com.google.firebase.components.ComponentRegistrar" />
+180-->[com.google.firebase:firebase-database:19.2.1] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5f73e3786aeb8d8688c1a28d2a422344/jetified-firebase-database-19.2.1/AndroidManifest.xml:34:17-82
+181            <meta-data
+181-->[com.google.firebase:firebase-abt:19.0.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/07293d8bdb93a48116ec1822bb301812/jetified-firebase-abt-19.0.0/AndroidManifest.xml:13:13-15:85
+182                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+182-->[com.google.firebase:firebase-abt:19.0.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/07293d8bdb93a48116ec1822bb301812/jetified-firebase-abt-19.0.0/AndroidManifest.xml:14:17-109
+183                android:value="com.google.firebase.components.ComponentRegistrar" />
+183-->[com.google.firebase:firebase-abt:19.0.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/07293d8bdb93a48116ec1822bb301812/jetified-firebase-abt-19.0.0/AndroidManifest.xml:15:17-82
+184        </service>
+185
+186        <activity
+186-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:47:9-53:63
+187            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+187-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:48:13-74
+188            android:clearTaskOnLaunch="true"
+188-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:49:13-45
+189            android:screenOrientation="sensorLandscape"
+189-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:50:13-56
+190            android:stateNotNeeded="true"
+190-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:51:13-42
+191            android:theme="@style/zxing_CaptureTheme"
+191-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:52:13-54
+192            android:windowSoftInputMode="stateAlwaysHidden" />
+192-->[com.journeyapps:zxing-android-embedded:3.6.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/72ae1b49045e3ef75a19b3eba4a791df/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:53:13-60
+193        <!--
+194             FirebaseMessagingService performs security checks at runtime,
+195             but set to not exported to explicitly avoid allowing another app to call it.
+196        -->
+197        <service
+197-->[com.google.firebase:firebase-messaging:20.1.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5343104783d118eea8e40faf2f40c201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:28:9-34:19
+198            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+198-->[com.google.firebase:firebase-messaging:20.1.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5343104783d118eea8e40faf2f40c201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:29:13-82
+199            android:exported="false" >
+199-->[com.google.firebase:firebase-messaging:20.1.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5343104783d118eea8e40faf2f40c201/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:30:13-37
+200            <intent-filter android:priority="-500" >
+200-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:26:13-28:29
+201                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+201-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:27:17-78
+201-->/home/cedcoss/Documents/NewShopifyApp/base/src/main/AndroidManifest.xml:27:25-75
+202            </intent-filter>
+203        </service>
+204        <service
+204-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/25f0e066ecd4cc92ca11c6beb8d3968b/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+205            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+205-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/25f0e066ecd4cc92ca11c6beb8d3968b/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+206            android:exported="false" >
+206-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/25f0e066ecd4cc92ca11c6beb8d3968b/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+207            <meta-data
+207-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/25f0e066ecd4cc92ca11c6beb8d3968b/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+208                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+208-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/25f0e066ecd4cc92ca11c6beb8d3968b/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+209                android:value="cct" />
+209-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/25f0e066ecd4cc92ca11c6beb8d3968b/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+210        </service>
+211        <service
+211-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/b7e1230370241c5943d37c6997a9736f/jetified-transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+212            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+212-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/b7e1230370241c5943d37c6997a9736f/jetified-transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+213            android:exported="false"
+213-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/b7e1230370241c5943d37c6997a9736f/jetified-transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+214            android:permission="android.permission.BIND_JOB_SERVICE" >
+214-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/b7e1230370241c5943d37c6997a9736f/jetified-transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+215        </service>
+216
+217        <receiver
+217-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/b7e1230370241c5943d37c6997a9736f/jetified-transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+218            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+218-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/b7e1230370241c5943d37c6997a9736f/jetified-transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
+219            android:exported="false" />
+219-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/b7e1230370241c5943d37c6997a9736f/jetified-transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+220        <receiver
+220-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:29:9-33:20
+221            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+221-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:30:13-85
+222            android:enabled="true"
+222-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:31:13-35
+223            android:exported="false" >
+223-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:32:13-37
+224        </receiver>
+225        <receiver
+225-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:34:9-42:20
+226            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+226-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:35:13-100
+227            android:enabled="true"
+227-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:36:13-35
+228            android:exported="true"
+228-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:37:13-36
+229            android:permission="android.permission.INSTALL_PACKAGES" >
+229-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:38:13-69
+230            <intent-filter>
+230-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:39:13-41:29
+231                <action android:name="com.android.vending.INSTALL_REFERRER" />
+231-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:40:17-79
+231-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:40:25-76
+232            </intent-filter>
+233        </receiver>
+234
+235        <service
+235-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:44:9-47:40
+236            android:name="com.google.android.gms.measurement.AppMeasurementService"
+236-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:45:13-84
+237            android:enabled="true"
+237-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:46:13-35
+238            android:exported="false" />
+238-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:47:13-37
+239        <service
+239-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:48:9-52:72
+240            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+240-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:49:13-87
+241            android:enabled="true"
+241-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:50:13-35
+242            android:exported="false"
+242-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:51:13-37
+243            android:permission="android.permission.BIND_JOB_SERVICE" />
+243-->[com.google.android.gms:play-services-measurement:17.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5226dfa19581ce0da4669edb1e33e764/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:52:13-69
+244
+245        <receiver
+245-->[com.google.firebase:firebase-iid:20.0.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/749fde32f4196c971b9e0a6525620771/jetified-firebase-iid-20.0.2/AndroidManifest.xml:37:9-44:20
+246            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+246-->[com.google.firebase:firebase-iid:20.0.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/749fde32f4196c971b9e0a6525620771/jetified-firebase-iid-20.0.2/AndroidManifest.xml:38:13-78
+247            android:exported="true"
+247-->[com.google.firebase:firebase-iid:20.0.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/749fde32f4196c971b9e0a6525620771/jetified-firebase-iid-20.0.2/AndroidManifest.xml:39:13-36
+248            android:permission="com.google.android.c2dm.permission.SEND" >
+248-->[com.google.firebase:firebase-iid:20.0.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/749fde32f4196c971b9e0a6525620771/jetified-firebase-iid-20.0.2/AndroidManifest.xml:40:13-73
+249            <intent-filter>
+249-->[com.google.firebase:firebase-iid:20.0.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/749fde32f4196c971b9e0a6525620771/jetified-firebase-iid-20.0.2/AndroidManifest.xml:41:13-43:29
+250                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+250-->[com.google.firebase:firebase-iid:20.0.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/749fde32f4196c971b9e0a6525620771/jetified-firebase-iid-20.0.2/AndroidManifest.xml:42:17-81
+250-->[com.google.firebase:firebase-iid:20.0.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/749fde32f4196c971b9e0a6525620771/jetified-firebase-iid-20.0.2/AndroidManifest.xml:42:25-78
+251            </intent-filter>
+252        </receiver>
+253
+254        <activity
+254-->[com.google.android.gms:play-services-base:17.0.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/d13f88ec7609fc371945b9db22b8d168/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+255            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+255-->[com.google.android.gms:play-services-base:17.0.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/d13f88ec7609fc371945b9db22b8d168/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+256            android:exported="false"
+256-->[com.google.android.gms:play-services-base:17.0.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/d13f88ec7609fc371945b9db22b8d168/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+257            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+257-->[com.google.android.gms:play-services-base:17.0.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/d13f88ec7609fc371945b9db22b8d168/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+258
+259        <provider
+259-->[com.google.firebase:firebase-common:19.3.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/ab41160b4b656972f14f20b1a8af0014/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+260            android:name="com.google.firebase.provider.FirebaseInitProvider"
+260-->[com.google.firebase:firebase-common:19.3.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/ab41160b4b656972f14f20b1a8af0014/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+261            android:authorities="com.shopify.shopifyapp.firebaseinitprovider"
+261-->[com.google.firebase:firebase-common:19.3.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/ab41160b4b656972f14f20b1a8af0014/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+262            android:exported="false"
+262-->[com.google.firebase:firebase-common:19.3.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/ab41160b4b656972f14f20b1a8af0014/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+263            android:initOrder="100" />
+263-->[com.google.firebase:firebase-common:19.3.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/ab41160b4b656972f14f20b1a8af0014/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+264
+265        <meta-data
+265-->[com.google.android.gms:play-services-basement:17.0.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/efed41838b857354c7635f4c1cf8a4e1/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+266            android:name="com.google.android.gms.version"
+266-->[com.google.android.gms:play-services-basement:17.0.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/efed41838b857354c7635f4c1cf8a4e1/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+267            android:value="@integer/google_play_services_version" />
+267-->[com.google.android.gms:play-services-basement:17.0.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/efed41838b857354c7635f4c1cf8a4e1/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+268
+269        <provider
+269-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5003586acfbaf1c55fabce24c3c1cfbb/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+270            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+270-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5003586acfbaf1c55fabce24c3c1cfbb/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+271            android:authorities="com.shopify.shopifyapp.lifecycle-process"
+271-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5003586acfbaf1c55fabce24c3c1cfbb/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+272            android:exported="false"
+272-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5003586acfbaf1c55fabce24c3c1cfbb/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+273            android:multiprocess="true" />
+273-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/5003586acfbaf1c55fabce24c3c1cfbb/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+274        <provider
+274-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/4e0370f07cfb003b0f623eeae3644126/jetified-crashlytics-2.10.1/AndroidManifest.xml:19:9-23:38
+275            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+275-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/4e0370f07cfb003b0f623eeae3644126/jetified-crashlytics-2.10.1/AndroidManifest.xml:20:13-75
+276            android:authorities="com.shopify.shopifyapp.crashlyticsinitprovider"
+276-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/4e0370f07cfb003b0f623eeae3644126/jetified-crashlytics-2.10.1/AndroidManifest.xml:21:13-75
+277            android:exported="false"
+277-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/4e0370f07cfb003b0f623eeae3644126/jetified-crashlytics-2.10.1/AndroidManifest.xml:22:13-37
+278            android:initOrder="90" />
+278-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/4e0370f07cfb003b0f623eeae3644126/jetified-crashlytics-2.10.1/AndroidManifest.xml:23:13-35
+279        <provider
+279-->[com.mindorks:paracamera:0.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/48fb65214540c53fbf29fadce671ed36/jetified-paracamera-0.2.2/AndroidManifest.xml:16:9-24:20
+280            android:name="androidx.core.content.FileProvider"
+280-->[com.mindorks:paracamera:0.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/48fb65214540c53fbf29fadce671ed36/jetified-paracamera-0.2.2/AndroidManifest.xml:17:13-62
+281            android:authorities="com.shopify.shopifyapp.imageprovider"
+281-->[com.mindorks:paracamera:0.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/48fb65214540c53fbf29fadce671ed36/jetified-paracamera-0.2.2/AndroidManifest.xml:18:13-65
+282            android:exported="false"
+282-->[com.mindorks:paracamera:0.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/48fb65214540c53fbf29fadce671ed36/jetified-paracamera-0.2.2/AndroidManifest.xml:19:13-37
+283            android:grantUriPermissions="true" >
+283-->[com.mindorks:paracamera:0.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/48fb65214540c53fbf29fadce671ed36/jetified-paracamera-0.2.2/AndroidManifest.xml:20:13-47
+284            <meta-data
+284-->[com.mindorks:paracamera:0.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/48fb65214540c53fbf29fadce671ed36/jetified-paracamera-0.2.2/AndroidManifest.xml:21:13-23:54
+285                android:name="android.support.FILE_PROVIDER_PATHS"
+285-->[com.mindorks:paracamera:0.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/48fb65214540c53fbf29fadce671ed36/jetified-paracamera-0.2.2/AndroidManifest.xml:22:17-67
+286                android:resource="@xml/file_paths" />
+286-->[com.mindorks:paracamera:0.2.2] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/48fb65214540c53fbf29fadce671ed36/jetified-paracamera-0.2.2/AndroidManifest.xml:23:17-51
+287        </provider>
+288        <provider
+288-->[com.squareup.picasso:picasso:2.71828] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/20385f78c3f8f8216c24e14228c31eaf/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+289            android:name="com.squareup.picasso.PicassoProvider"
+289-->[com.squareup.picasso:picasso:2.71828] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/20385f78c3f8f8216c24e14228c31eaf/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+290            android:authorities="com.shopify.shopifyapp.com.squareup.picasso"
+290-->[com.squareup.picasso:picasso:2.71828] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/20385f78c3f8f8216c24e14228c31eaf/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+291            android:exported="false" />
+291-->[com.squareup.picasso:picasso:2.71828] /home/cedcoss/.gradle/caches/transforms-2/files-2.1/20385f78c3f8f8216c24e14228c31eaf/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+292    </application>
+293
+294</manifest>
